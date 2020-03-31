@@ -34,13 +34,15 @@ for (let i=0;i<links.length; i++)
   {
     if (links[i].href.indexOf('https://xn----7sbab5aqcbiddtdj1e1g.xn--p1ai/')!=-1)
     {
-        location.href=links[i].href;//это чтобы не плодились табы
-        //      links[i].click();   //это открывает в новом табе и они плодятся!!!
+        links[i].removeAttribute("target");
+     //   console.log(a);
+        links[i].click();   //это открывает в новом табе и они плодятся!!!
 
         break;
     }
    }
 }
+
 else
 {
    setInterval(()=>
