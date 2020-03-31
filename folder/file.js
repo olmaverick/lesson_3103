@@ -36,7 +36,7 @@ for (let i=0;i<links.length; i++)
     {
         links[i].removeAttribute("target");
      //   console.log(a);
-        links[i].click();   //это открывает в новом табе и они плодятся!!!
+        links[i].click();   //
 
         break;
     }
